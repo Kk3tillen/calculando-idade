@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="idade.php" method="post">
+        <fieldset>
+            <legend>Calculando sua Idade</legend>
+            <div>
+                <label for="Nome">Nome: </label>
+                <input type="text" name="Nome" required>
+                <label for="sobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome">
+            </div>
+            <div>
+                <label for="data">Dia do nascimento: </label>
+                <input type="number" name="data" min="1" max="31" placeholder="Dia">/
+                <input type="number" name="mes"  min="1" max="12" placeholder="Mês">/
+                <input type="number" name="ano" placeholder="Ano" required>
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpa</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
